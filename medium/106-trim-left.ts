@@ -18,14 +18,14 @@
 
 /* _____________ Your Code Here _____________ */
 
-type TrimLeft<S extends string> = S extends `${infer First}${infer Rest}`
+export type TrimLeft<S extends string> = S extends `${infer First}${infer Rest}`
   ? First extends ' ' | '\t' | '\n'
   ? TrimLeft<Rest>
   : `${First}${Rest}`
   : S;
 
 // https://github.com/type-challenges/type-challenges/issues/23124
-// type TrimLeft<S extends string> = S extends `${' ' | '\n' | '\t'}${infer Rest}` ? TrimLeft<Rest> : S;
+// export type TrimLeft<S extends string> = S extends `${' ' | '\n' | '\t'}${infer Rest}` ? TrimLeft<Rest> : S;
 
 /* _____________ Test Cases _____________ */
 import type { Equal, Expect } from '../utils'
