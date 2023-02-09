@@ -1,0 +1,22 @@
+{
+  "name": "type-challenges",
+  "version": "1.0.0",
+  "description": "Robinsstudio's solutions to Type Challenges",
+  "main": "1-hello-world.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Robinsstudio/Type-Challenges.git"
+  },
+  "author": "Robinsstudio",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Robinsstudio/Type-Challenges/issues"
+  },
+  "homepage": "https://github.com/Robinsstudio/Type-Challenges#readme",
+  "devDependencies": {
+    "typescript": "^4.9.5"
+  }
+}
