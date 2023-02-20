@@ -18,7 +18,7 @@
 
 /* _____________ Your Code Here _____________ */
 
-type IsLetter<T extends string> = T extends `${infer First}${infer Rest}`
+export type IsLetter<T extends string> = T extends `${infer First}${infer Rest}`
   ? Uppercase<First> extends Lowercase<First>
   ? false
   : Rest extends ''
