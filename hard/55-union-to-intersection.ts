@@ -19,7 +19,7 @@
 /* _____________ Your Code Here _____________ */
 
 // https://github.com/type-challenges/type-challenges/issues/23385
-type UnionToIntersection<T> =
+export type UnionToIntersection<T> =
   (
     T extends unknown
     ? (arg: T) => void
