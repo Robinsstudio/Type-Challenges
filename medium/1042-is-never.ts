@@ -23,7 +23,7 @@
 
 /* _____________ Your Code Here _____________ */
 
-type IsNever<T> = [T] extends [never] ? true : false;
+export type IsNever<T> = [T] extends [never] ? true : false;
 
 /* _____________ Test Cases _____________ */
 import type { Equal, Expect } from '../utils'
