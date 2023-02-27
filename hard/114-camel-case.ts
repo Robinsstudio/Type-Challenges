@@ -25,7 +25,7 @@ type ToCamelCase<S extends string> = S extends `${infer First}${infer Rest}`
   : `${First}${ToCamelCase<Rest>}`
   : S;
 
-type CamelCase<S extends string> = ToCamelCase<Lowercase<S>>;
+export type CamelCase<S extends string> = ToCamelCase<Lowercase<S>>;
 
 // https://github.com/type-challenges/type-challenges/issues/20442
 // type CamelCase<S extends string> = S extends `${infer A}_${infer B}`
