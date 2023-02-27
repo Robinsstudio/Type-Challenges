@@ -19,7 +19,7 @@
 
 /* _____________ Your Code Here _____________ */
 
-type StringToUnion<T extends string> = T extends `${infer First}${infer Rest}`
+export type StringToUnion<T extends string> = T extends `${infer First}${infer Rest}`
   ? First | StringToUnion<Rest>
   : never;
 
