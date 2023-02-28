@@ -12,7 +12,7 @@
 
 /* _____________ Your Code Here _____________ */
 
-type ToNumber<S extends string> = S extends `${infer Number extends number}` ? Number : never;
+export type ToNumber<S extends string> = S extends `${infer Number extends number}` ? Number : never;
 
 /* _____________ Test Cases _____________ */
 import type { Equal, Expect } from '../utils'
