@@ -12,7 +12,7 @@
 
 /* _____________ Your Code Here _____________ */
 
-type LengthOfString<S extends string, Output extends unknown[] = []> = S extends `${infer First}${infer Rest}`
+export type LengthOfString<S extends string, Output extends unknown[] = []> = S extends `${infer First}${infer Rest}`
   ? LengthOfString<Rest, [...Output, First]>
   : Output['length'];
 
