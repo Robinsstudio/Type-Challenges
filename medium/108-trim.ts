@@ -18,12 +18,9 @@
 
 /* _____________ Your Code Here _____________ */
 import { TrimLeft } from './106-trim-left';
+import { TrimRight } from './4803-trim-right';
 
-type Reverse<T extends string> = T extends `${infer First}${infer Rest}`
-  ? `${Reverse<Rest>}${First}`
-  : T;
-
-type Trim<S extends string> = Reverse<TrimLeft<Reverse<TrimLeft<S>>>>;
+type Trim<S extends string> = TrimLeft<TrimRight<S>>;
 
 // https://github.com/type-challenges/type-challenges/issues/23215
 // type space = " " | "\n" | "\t"
