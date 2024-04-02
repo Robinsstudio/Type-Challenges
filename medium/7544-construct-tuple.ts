@@ -18,7 +18,7 @@
 
 /* _____________ Your Code Here _____________ */
 
-type ConstructTuple<L extends number, T extends unknown[] = []> = T['length'] extends L ? T : ConstructTuple<L, [...T, unknown]>;
+export type ConstructTuple<L extends number, T extends unknown[] = []> = T['length'] extends L ? T : ConstructTuple<L, [...T, unknown]>;
 
 /* _____________ Test Cases _____________ */
 import type { Equal, Expect } from '../utils'
