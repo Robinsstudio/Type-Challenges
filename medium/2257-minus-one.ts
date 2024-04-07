@@ -45,7 +45,7 @@ type ReversedMinusOne<T extends string> = T extends `${infer First extends Digit
   : `${PreviousDigit[First]}${Rest}`
   : T;
 
-type TrimLeadingZeroes<T> = T extends '0'
+export type TrimLeadingZeroes<T> = T extends '0'
   ? T
   : T extends `0${infer Rest}`
   ? TrimLeadingZeroes<Rest>
