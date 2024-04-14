@@ -42,7 +42,7 @@ type ShorterThan<T, U> = [T, U] extends [[], [unknown, ...unknown[]]] | [[], []]
   ? ShorterThan<RestA, RestB>
   : never;
 
-type LessThan<T extends number, U extends number> = ShorterThan<ConstructTuple<T>, ConstructTuple<U>>;
+export type LessThan<T extends number, U extends number> = ShorterThan<ConstructTuple<T>, ConstructTuple<U>>;
 
 type ValidDay<D extends number, M> = D extends 0
   ? false
